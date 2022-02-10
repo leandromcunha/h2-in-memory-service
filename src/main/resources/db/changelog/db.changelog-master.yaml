@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-type-fone
+      author: Leandro Marques da Cunha
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: scripts/01-create-data-type-phone.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+  - changeSet:
+      id: insert-type-fone
+      author: Leandro Marques da Cunha
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: scripts/01-insert-data-type-phone.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
